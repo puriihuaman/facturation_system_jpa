@@ -10,9 +10,9 @@ public class ModelController {
 	/**
 	 * Authentication
 	 */
-	public User authenticate(String _username, String _password) {
-		return PERSISTENCE.authenticate(_username, _password);
-	}
+//	public User authenticate(String _username, String _password) {
+//		return PERSISTENCE.authenticate(_username, _password);
+//	}
 
 	public ArrayList<Product> getProducts() {
 		return PERSISTENCE.getAllProducts();

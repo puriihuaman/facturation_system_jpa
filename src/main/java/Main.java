@@ -1,6 +1,7 @@
 
 import javax.swing.*;
 
+import views.Dashboard;
 import views.Login;
 
 public class Main {
@@ -8,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		nimbusUi();
 
-		JFrame frame = new Login();
+		JFrame frame = new Dashboard();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);

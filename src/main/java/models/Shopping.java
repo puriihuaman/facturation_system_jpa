@@ -10,8 +10,8 @@ import java.util.UUID;
 public class Shopping {
 	@Id
 	@GeneratedValue (strategy = GenerationType.UUID)
-	@Column (name = "id_shopping", columnDefinition = "uuid")
-	private UUID idShopping;
+	@Column (name = "shopping_id", columnDefinition = "uuid")
+	private UUID shoppingId;
 
 	@Basic
 	@Column (name = "shopping_date")
@@ -20,18 +20,25 @@ public class Shopping {
 	private short amount;
 	@Column (name = "total")
 	private double total;
-	@Column (name = "id_provider")
+
+	@ManyToOne
+	@Column (name = "provider_id")
 	private Provider provider;
-	@Column (name = "id_product")
+
+	@ManyToOne
+	@Column (name = "product_id")
 	private Product product;
-	@Column (name = "id_user")
+
+	@ManyToOne
+	@Column (name = "user_id")
 	private User user;
 
 	public Shopping() {
 	}
 
-	public Shopping(final UUID _idShopping, final Calendar _shoppingDate, final short _amount, final double _total, final Provider _provider, final Product _product, final User _user) {
-		this.idShopping = _idShopping;
+	public Shopping(final UUID _shoppingId, final Calendar _shoppingDate, final short _amount,
+		final double _total, final Provider _provider, final Product _product, final User _user) {
+		this.shoppingId = _shoppingId;
 		this.shoppingDate = _shoppingDate;
 		this.amount = _amount;
 		this.total = _total;
@@ -40,59 +47,59 @@ public class Shopping {
 		this.user = _user;
 	}
 
-	public UUID getIdShopping() {
-		return this.idShopping;
+	public UUID getShoppingId() {
+		return this.shoppingId;
 	}
 
-	public void setIdShopping(final UUID idShopping) {
-		this.idShopping = idShopping;
+	public void setShoppingId(final UUID _shoppingId) {
+		this.shoppingId = _shoppingId;
 	}
 
 	public Calendar getShoppingDate() {
 		return this.shoppingDate;
 	}
 
-	public void setShoppingDate(final Calendar shoppingDate) {
-		this.shoppingDate = shoppingDate;
+	public void setShoppingDate(final Calendar _shoppingDate) {
+		this.shoppingDate = _shoppingDate;
 	}
 
 	public short getAmount() {
 		return this.amount;
 	}
 
-	public void setAmount(final short amount) {
-		this.amount = amount;
+	public void setAmount(final short _amount) {
+		this.amount = _amount;
 	}
 
 	public double getTotal() {
 		return this.total;
 	}
 
-	public void setTotal(final double total) {
-		this.total = total;
+	public void setTotal(final double _total) {
+		this.total = _total;
 	}
 
 	public Provider getProvider() {
 		return this.provider;
 	}
 
-	public void setProvider(final Provider provider) {
-		this.provider = provider;
+	public void setProvider(final Provider _provider) {
+		this.provider = _provider;
 	}
 
 	public Product getProduct() {
 		return this.product;
 	}
 
-	public void setProduct(final Product product) {
-		this.product = product;
+	public void setProduct(final Product _product) {
+		this.product = _product;
 	}
 
 	public User getUser() {
 		return this.user;
 	}
 
-	public void setUser(final User user) {
-		this.user = user;
+	public void setUser(final User _user) {
+		this.user = _user;
 	}
 }

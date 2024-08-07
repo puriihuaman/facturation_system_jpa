@@ -2,6 +2,7 @@ package models;
 
 import jakarta.persistence.*;
 
+import java.util.LinkedList;
 import java.util.UUID;
 
 @Entity
@@ -20,21 +21,31 @@ public class Product {
 	private double price;
 	@Column (name = "description", length = 100)
 	private String description;
-	@OneToOne
-	@Column (name = "user_id")
+
+	@ManyToOne
+	@Column(name = "user_id")
 	private User user;
+
+	@OneToMany (mappedBy = "product")
+	@Column(name = "shopping_id")
+	private LinkedList<Shopping> shoppingList;
+
+	@OneToMany (mappedBy = "product")
+	@Column(name = "sale_id")
+	private LinkedList<Sale> salesList;
 
 	public Product() {
 	}
 
-	public Product(UUID _productId, String _productName, short _stock, double _price,
-		String _description, User _user) {
+	public Product(UUID _productId, String _productName, short _stock, double _price, String _description, User _user, LinkedList<Shopping> _shoppingList, LinkedList<Sale> _salesList) {
 		this.productId = _productId;
 		this.productName = _productName;
 		this.stock = _stock;
 		this.price = _price;
 		this.description = _description;
 		this.user = _user;
+		this.shoppingList = _shoppingList;
+		this.salesList = _salesList;
 	}
 
 	public UUID getProductId() {
@@ -83,5 +94,21 @@ public class Product {
 
 	public void setUser(final User _user) {
 		this.user = _user;
+	}
+
+	public LinkedList<Shopping> getShoppingList() {
+		return this.shoppingList;
+	}
+
+	public void setShoppingList(final LinkedList<Shopping> _shoppingList) {
+		this.shoppingList = _shoppingList;
+	}
+
+	public LinkedList<Sale> getSalesList() {
+		return this.salesList;
+	}
+
+	public void setSalesList(final LinkedList<Sale> _salesList) {
+		this.salesList = _salesList;
 	}
 }

@@ -5,11 +5,11 @@
 						 version="3.0">
 	<persistence-unit name="facturation_system">
 		<class>models.Product</class>
-		<class>models.Provider</class>
+<!--		<class>models.Provider</class>-->
 		<class>models.User</class>
-		<class>models.Client</class>
-		<class>models.Sale</class>
-		<class>models.Shopping</class>
+<!--		<class>models.Client</class>-->
+<!--		<class>models.Sale</class>-->
+<!--		<class>models.Shopping</class>-->
 		<class>models.Profile</class>
 
 		<properties>
@@ -18,7 +18,10 @@
 								value="jdbc:postgresql://localhost:5432/demo?serverTimezone=UTC"/>
 			<property name="jakarta.persistence.jdbc.user" value="postgres"/>
 			<property name="jakarta.persistence.jdbc.password" value="1998pvri"/>
-			<property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+
+			<property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+			<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.ProgressDialect"/>-->
+			<!-- <property name="hibernate.auto" value=""/>-->
 		</properties>
 	</persistence-unit>
 </persistence>

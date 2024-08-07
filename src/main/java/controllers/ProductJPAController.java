@@ -12,18 +12,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ProductJPAController implements Serializable {
-	private EntityManagerFactory em = null;
+	private EntityManagerFactory emf = null;
 
-	public ProductJPAController(EntityManagerFactory _em) {
-		em = _em;
+	public ProductJPAController(EntityManagerFactory _emf) {
+		emf = _emf;
 	}
 
 	public ProductJPAController() {
-		em = Persistence.createEntityManagerFactory("facturation_system");
+		emf = Persistence.createEntityManagerFactory("facturation_system");
 	}
 
 	public EntityManager getEntityManager() {
-		return em.createEntityManager();
+		return emf.createEntityManager();
 	}
 
 	public List<Product> getProducts() {
@@ -32,7 +32,6 @@ public class ProductJPAController implements Serializable {
 			TypedQuery<Product> query = em.createQuery("SELECT p FROM Product p", Product.class);
 			products = query.getResultList();
 		} catch (Exception ex) {
-			ex.printStackTrace();
 			Logger.getLogger(ProductJPAController.class.getName()).log(Level.SEVERE, null, ex);
 		}
 		return products;

@@ -8,6 +8,7 @@ import models.ModelController;
 import models.User;
 
 import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
@@ -15,11 +16,11 @@ public class Login extends JFrame {
 		initComponents();
 	}
 
-	private User authenticate(String _username, String _password) {
-		ModelController controller = new ModelController();
-		User user = controller.authenticate(_username, _password);
-		return user;
-	}
+	//	private User authenticate(String _username, String _password) {
+	//		ModelController controller = new ModelController();
+	//		User user = controller.authenticate(_username, _password);
+	//		return user;
+	//	}
 
 	/**
 	 * This method is called from within the constructor to initialize the form.
@@ -121,25 +122,27 @@ public class Login extends JFrame {
 		pack();
 	}// </editor-fold>//GEN-END:initComponents
 
-	private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {
-		String username = txtUsername.getText().toLowerCase().trim();
-		String password = txtPassword.getText().toLowerCase().trim();
-
-		System.out.println(username);
-		System.out.println(password);
-
-		if (!username.isEmpty() || !password.isEmpty()) {
-			User user = authenticate(username, password);
-			if (user != null) {
-				JFrame dashboard = new Dashboard();
-				dashboard.setVisible(true);
-				dashboard.setLocationRelativeTo(null);
-			} else {
-				System.out.println("Error al iniciar sesión");
-			}
-		}
-
-	}                                        
+	private void btnLoginActionPerformed(ActionEvent evt) {
+		JFrame dashboard = new Dashboard();
+		dashboard.setVisible(true);
+		dashboard.setLocationRelativeTo(null);
+		//		String username = txtUsername.getText().toLowerCase().trim();
+		//		String password = txtPassword.getText().toLowerCase().trim();
+		//
+		//		System.out.println(username);
+		//		System.out.println(password);
+		//
+		//		if (!username.isEmpty() || !password.isEmpty()) {
+		//			User user = authenticate(username, password);
+		//			if (user != null) {
+		//				JFrame dashboard = new Dashboard();
+		//				dashboard.setVisible(true);
+		//				dashboard.setLocationRelativeTo(null);
+		//			} else {
+		//				System.out.println("Error al iniciar sesión");
+		//			}
+		//		}
+	}
 
 	// Variables declaration - do not modify//GEN-BEGIN:variables
 	private javax.swing.JButton btnLogin;

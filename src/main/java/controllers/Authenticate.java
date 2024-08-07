@@ -1,24 +1,21 @@
 package controllers;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
-import jakarta.persistence.TypedQuery;
+import jakarta.persistence.*;
 import models.User;
 
 public class Authenticate {
-	EntityManagerFactory em = null;
+	private EntityManagerFactory emf = null;
 
-	public Authenticate(EntityManagerFactory _em) {
-		em = _em;
+	public Authenticate(EntityManagerFactory _emf) {
+		emf = _emf;
 	}
 
 	public Authenticate() {
-		em = Persistence.createEntityManagerFactory("facturation_system");
+		emf = Persistence.createEntityManagerFactory("facturation_system");
 	}
 
 	public EntityManager getEntityManager() {
-		return em.createEntityManager();
+		return emf.createEntityManager();
 	}
 
 	public User authenticate(String _username, String _password) {
@@ -27,11 +24,14 @@ public class Authenticate {
 
 		try (EntityManager em = getEntityManager()) {
 			TypedQuery<User> query = em.createQuery("SELECT u.userId, u.firstName, u.lastName, u.profile FROM User u WHERE authentication(:username, :password)",
-				User.class);
-//			TypedQuery<User> query = em.createNamedQuery("User.authentication", User.class);
+				User.class
+			);
+			//			TypedQuery<User> query = em.createNamedQuery("User.authentication", User.class);
+			//			StoredProcedureQuery spq = em.createNamedStoredProcedureQuery("User.authentication");
 			query.setParameter("username", _username);
 			query.setParameter("password", _password);
-			user = query.getSingleResult();
+
+			user = (User) query.getSingleResult();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
