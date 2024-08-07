@@ -1,0 +1,187 @@
+<code_scheme name="Default" version="173">
+  <option name="OTHER_INDENT_OPTIONS">
+    <total>
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </total>
+  </option>
+  <option name="RIGHT_MARGIN" total="100" />
+  <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" total="true" />
+  <option name="FORMATTER_TAGS_ACCEPT_REGEXP" total="true" />
+  <option name="SOFT_MARGINS" total="100" />
+  <Angular2HtmlCodeStyleSettings>
+    <option name="INTERPOLATION_NEW_LINE_AFTER_START_DELIMITER" total="false" />
+    <option name="INTERPOLATION_NEW_LINE_BEFORE_END_DELIMITER" total="false" />
+  </Angular2HtmlCodeStyleSettings>
+  <JavaCodeStyleSettings>
+    <option name="JD_ADD_BLANK_AFTER_PARM_COMMENTS" total="true" />
+  </JavaCodeStyleSettings>
+  <codeStyleSettings language="CSS">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Groovy">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="HTML">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="HTTP Request">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JAVA">
+    <option name="KEEP_LINE_BREAKS" total="false" />
+    <option name="KEEP_FIRST_COLUMN_COMMENT" total="false" />
+    <option name="ALIGN_MULTILINE_CHAINED_METHODS" total="true" />
+    <option name="ALIGN_MULTILINE_PARAMETERS" total="false" />
+    <option name="ALIGN_MULTILINE_THROWS_LIST" total="true" />
+    <option name="CALL_PARAMETERS_WRAP" total="5" />
+    <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" total="true" />
+    <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" total="true" />
+    <option name="METHOD_CALL_CHAIN_WRAP" total="5" />
+    <option name="WRAP_FIRST_METHOD_IN_CALL_CHAIN" total="true" />
+    <option name="BINARY_OPERATION_WRAP" total="1" />
+    <option name="TERNARY_OPERATION_WRAP" total="5" />
+    <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" total="true" />
+    <option name="ARRAY_INITIALIZER_WRAP" total="5" />
+    <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" total="true" />
+    <option name="ASSIGNMENT_WRAP" total="5" />
+    <option name="PLACE_ASSIGNMENT_SIGN_ON_NEXT_LINE" total="true" />
+    <option name="SPACE_BEFORE_ANOTATION_PARAMETER_LIST" total="true" />
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSON">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSP">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="4" />
+      <option name="CONTINUATION_INDENT_SIZE" total="4" />
+      <option name="TAB_SIZE" total="4" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JSPX">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="4" />
+      <option name="CONTINUATION_INDENT_SIZE" total="4" />
+      <option name="TAB_SIZE" total="4" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="JavaScript">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Markdown">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="4" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+      <option name="KEEP_INDENTS_ON_EMPTY_LINES" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Qute">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SCSS">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="SQL">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="TOML">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="4" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="VTL">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="Vue">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="XML">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="kotlin">
+    <indentOptions>
+      <option name="INDENT_SIZE" total="2" />
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="TAB_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="protobuf">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+  <codeStyleSettings language="prototext">
+    <indentOptions>
+      <option name="CONTINUATION_INDENT_SIZE" total="2" />
+      <option name="USE_TAB_CHARACTER" total="true" />
+      <option name="SMART_TABS" total="true" />
+    </indentOptions>
+  </codeStyleSettings>
+</code_scheme>
